@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjali Khurana Rai | Human-AI Researcher</title>
+  <style>
+    :root {
+      --primary: #007acc;
+      --bg: #ffffff;
+      --sidebar-bg: #f5f5f5;
+      --text: #333333;
+      --muted: #666666;
+      --highlight-bg: #e6f4ff;
+      --highlight-text: #005ea6;
+    }
+    /* Reset & Base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { display: flex; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: var(--text); background-color: #ececec; }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 220px;
+      background: var(--sidebar-bg);
+      padding: 2rem 1rem;
+      border-right: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sidebar-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 2px solid var(--primary);
+    }
+    .sidebar h2 {
+      font-size: 1.25rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .sidebar-tagline {
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .nav-list {
+      list-style: none;
+      width: 100%;
+    }
+    .nav-list li {
+      margin-bottom: 1rem;
+    }
+    .nav-list a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      display: block;
+      padding: 0.25rem 0.5rem;
+      border-left: 3px solid transparent;
+    }
+    .nav-list a:hover,
+    .nav-list a:focus {
+      color: var(--primary);
+      border-left-color: var(--primary);
+    }
+
+    /* Main Content */
+    .content-wrapper {
+      margin-left: 240px;
+      padding: 3rem 2rem;
+      max-width: 800px;
+      background: var(--bg);
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Highlight Box */
+    .highlight-box {
+      background: var(--highlight-bg);
+      color: var(--highlight-text);
+      border-left: 4px solid var(--primary);
+      padding: 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+    .highlight-box p { margin: 0.5rem 0; }
+
+    /* Sections */
+    section { padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid #ddd; }
+    section:last-child { border-bottom: none; }
+    h1, h2 {
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.75rem; }
+    p, li { margin-bottom: 1rem; }
+    ul, ol { margin-left: 1.5rem; }
+    a { color: var(--primary); }
+
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      body { flex-direction: column; }
+      .sidebar { position: relative; width: 100%; height: auto; padding: 1rem; border-right: none; border-bottom: 1px solid #ddd; }
+      .content-wrapper { margin: 0; border-radius: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <img src="images/image.png" alt="Profile Photo" class="sidebar-photo">
+    <h2>Anjali Khurana Rai</h2>
+    <p class="sidebar-tagline">PhD Candidate, Human-AI Interaction</p>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#research-interests">Research Interests</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#press">Press</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content-wrapper">
+    <!-- About Me -->
+    <section id="about-me">
+      <h1>About Me</h1>
+      <div class="highlight-box">
+        <p><strong>Upcoming:</strong> Research Intern at Microsoft Research FATE Lab, New York (May – August 2025)</p>
+        <p><strong>Collaboration:</strong> Ongoing research collaboration with Meta Reality Labs</p>
+      </div>
+      <p><strong>Anjali Khurana Rai</strong> is a PhD candidate in Computing Science at Simon Fraser University, specializing in Human-AI Interaction and LLM-based agents for software help-seeking. Her work focuses on user perceptions of AI failures and designing effective human–AI collaboration strategies.</p>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="research-interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Human–LLM Collaboration & Copilots</li>
+        <li>Explainable AI & Trust in Chatbot Interfaces</li>
+        <li>Augmented Reality / Mixed Reality Interfaces</li>
+        <li>User Perception of AI Failures</li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol>
+        <li><strong>CHI 2025</strong> – Do It For Me vs. Do It With Me: Investigating User Perceptions of Different Levels of Automation in Copilots</li>
+        <li><strong>IUI 2024</strong> – Why and When LLM-Based Assistants Can Go Wrong: Prompt-Based Software Help-Seeking</li>
+        <li><strong>UbiComp ’24 Companion</strong> – Novice Users’ Mental Models of Gesture Discoverability</li>
+        <li><strong>IMWUT 2023</strong> – Gestural Interactions in AR Applications</li>
+        <li><strong>VL/HCC 2021</strong> – ChatrEx: Explainable Chatbot Interfaces</li>
+      </ol>
+      <p>For the full list, see <a href="https://scholar.google.ca/citations?user=2A13ywoAAAAJ&hl=en">Google Scholar</a>.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>UXEva:</strong> Automated UI evaluation using LLM agents to identify design issues.</li>
+        <li><strong>ChatrSQL:</strong> Text-to-SQL system for novices via LLM fine-tuning on WikiSQL.</li>
+        <li><strong>Robust QA System:</strong> Domain-robust question answering with hyperparameter tuning.</li>
+        <li><strong>USCrimeVIS:</strong> D3.js visualization of U.S. crime data over time.</li>
+        <li><strong>Siri Study:</strong> Usability evaluation of voice assistants for scheduling tasks.</li>
+      </ul>
+    </section>
+
+    <!-- Press -->
+    <section id="press">
+      <h2>Press</h2>
+      <p>Featured by SFU Graduate and Postdoctoral Studies: <a href="https://www.sfu.ca/gradstudies/life-community/people-research/profiles/fas/2022/anjali-khurana.html">Graduate Researcher Profile</a>.</p>
+    </section>
+
+    <!-- Awards and Honors -->
+    <section id="awards">
+      <h2>Awards & Honors</h2>
+      <ul>
+        <li>Nominee, <strong>Google PhD Fellowship</strong> – SFU (2024)</li>
+        <li><strong>Aarohan Platinum Award</strong> – Infosys Foundation (2019)</li>
+        <li>Multiple SFU Graduate Fellowships & Scholarships (2019–2024)</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:anjali_khurana@sfu.ca">anjali_khurana@sfu.ca</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/anjali-khurana-rai-418710124/">linkedin.com/in/anjali-khurana-rai-418710124/</a></p>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Anjali Khurana Rai</p>
+    </footer>
+  </main>
+</body>
+</html>
