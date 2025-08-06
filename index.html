@@ -9,7 +9,7 @@
       --primary: #007acc;
       --bg: #ffffff;
       --sidebar-bg: #f5f5f5;
-      --text: #333333;
+      --text: #555555;
       --muted: #666666;
       --highlight-bg: #e6f4ff;
       --highlight-text: #005ea6;
@@ -110,6 +110,33 @@
     ul, ol { margin-left: 1.5rem; }
     a { color: var(--primary); }
 
+    /* Publications Styling */
+    .publication {
+      margin-bottom: 1.5em;
+    }
+    
+    .venue {
+      color: #0066cc;
+      font-weight: 600;
+    }
+    
+    .acceptance-rate {
+      color: #666;
+      font-style: italic;
+    }
+    
+    .publication-note {
+      margin-top: 0.5em;
+      margin-left: 1em;
+      color: #555;
+      font-size: 0.95em;
+    }
+    
+    h3 {
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+
     /* Footer */
     .site-footer {
       text-align: center;
@@ -134,7 +161,6 @@
     <nav>
       <ul class="nav-list">
         <li><a href="#about-me">About Me</a></li>
-        <li><a href="#research-interests">Research Interests</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#press">Press</a></li>
@@ -149,10 +175,6 @@
     <!-- About Me -->
     <section id="about-me">
       <h1>About Me</h1>
-      <div class="highlight-box">
-        <p><strong>Upcoming:</strong> Research Intern at Microsoft Research FATE Lab, New York (May – August 2025)</p>
-        <p><strong>Collaboration:</strong> Ongoing research collaboration with Meta Reality Labs</p>
-      </div>
       <p><strong></strong> I am a 4th-year Ph.D. candidate in the School of Computing Science at Simon Fraser
 		University and an incoming Research Intern at Microsoft Research FATE, New York.
 		<br> <br>
@@ -163,104 +185,93 @@
 		<br> <br>
 		I enjoy working on the design space (iterative design and prototyping, user-centered design approach), and applying LLM models to cater to software user needs. Before coming to SFU, I interned in product development in Atlanta, USA, and a two-month technical mentorship program at IIT Hyderabad.
 		</p>
+    <p><strong><a href="CV.pdf" target="_blank">CV</a></strong></p>
     </section>
 
-    <!-- Research Interests -->
-    <section id="research-interests">
-      <h2>Research Interests</h2>
+     <!-- News -->
+    <section id="news">
+      <h2>News</h2>
       <ul>
-        <li>Human–AI Interaction</li>
-        <li>Augmented Reality / Mixed Reality Interfaces</li>
-		<li>Transparency and Control in LLMs</li>
-        <li>Software Help-Seeking</li>
+        <li><strong>May 2025:</strong> Started Research Intern at Microsoft Research FATE Lab, New York</li>
+        <li><strong>May 2025:</strong> Presented at ACM CHI Yokohama Japan</li>
       </ul>
     </section>
 
     <!-- Publications -->
-<section id="publications">
-  <h2>Selected Publications</h2>
-  
-  <div class="publication">
-    <strong>Do It For Me vs. Do It With Me: Investigating User Perceptions of Different Levels of Automation in Copilots for Feature-Rich Software</strong><br>
-    Arshdeep Khurana, Xinwei Su, April Y. Wang, Parmit K. Chilana<br>
-    <span class="venue">CHI 2025</span> <span class="acceptance-rate">[25.1% acceptance rate]</span> ● <a href="https://doi.org/10.1145/3706598.3713431">PAPER</a>
-  </div>
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      
+      <div class="publication">
+        <strong>Do It For Me vs. Do It With Me: Investigating User Perceptions of Different Levels of Automation in Copilots for Feature-Rich Software</strong><br>
+        Anjali Khurana, Xiaotian Su, April Y. Wang, Parmit K Chilana<br>
+        <span class="venue">CHI 2025</span> <span class="acceptance-rate">[25.1% acceptance rate]</span> ● <a href="https://doi.org/10.1145/3706598.3713431">PAPER</a>
+      </div>
 
-  <div class="publication">
-    <strong>Why and When LLM-Based Assistants Can Go Wrong: Investigating the Effectiveness of Prompt-Based Interactions for Software Help-Seeking</strong><br>
-    Arshdeep Khurana, Hariharan Subramonyam, Parmit K. Chilana<br>
-    <span class="venue">IUI 2024</span> <span class="acceptance-rate">[24% acceptance rate]</span> ● <a href="https://doi.org/10.1145/3640543.3645200">PAPER</a>
-  </div>
+      <div class="publication">
+        <strong>Why and When LLM-Based Assistants Can Go Wrong: Investigating the Effectiveness of Prompt-Based Interactions for Software Help-Seeking</strong><br>
+        Anjali Khurana, Hari Subramonyam, Parmit K Chilana<br>
+        <span class="venue">IUI 2024</span> <span class="acceptance-rate">[24% acceptance rate]</span> ● <a href="https://doi.org/10.1145/3640543.3645200">PAPER</a>
+      </div>
 
-  <div class="publication">
-    <strong>Understanding Novice Users' Mental Models of Gesture Discoverability and Designing Effective On-boarding</strong><br>
-    Arshdeep Khurana, Parmit K. Chilana<br>
-    <span class="venue">UbiComp Companion 2024</span> ● <a href="https://doi.org/10.1145/3675094.3678370">PAPER</a>
-  </div>
+      <div class="publication">
+        <strong>Understanding Novice Users' Mental Models of Gesture Discoverability and Designing Effective Onboarding</strong><br>
+        Anjali Khurana, Parmit K Chilana<br>
+        <span class="venue">UbiComp Companion '24</span> ● <a href="https://doi.org/10.1145/3675094.3678370">PAPER</a>
+      </div>
 
-  <div class="publication">
-    <strong>"Do I Just Tap My Headset?": How Novice Users Discover Gestural Interactions with Consumer Augmented Reality Applications</strong><br>
-    Arshdeep Khurana, Michael Glueck, Parmit K. Chilana<br>
-    <span class="venue">IMWUT 2023</span> ● <a href="https://doi.org/10.1145/3631451">PAPER</a>
-  </div>
 
-  <div class="publication">
-    <strong>ChatrEx: Designing Explainable Chatbot Interfaces for Enhancing Usefulness, Transparency, and Trust</strong><br>
-    Arshdeep Khurana, Pourya Harjandi, Parmit K. Chilana<br>
-    <span class="venue">VL/HCC 2021</span> <span class="acceptance-rate">[30% acceptance rate]</span> ● <a href="https://doi.org/10.1109/VL/HCC51201.2021.9576440">PAPER</a>
-    <div class="publication-note">* Also presented at CS Research Day (SFU 2021), CHI Workshop on Human-Centered Perspectives in XAI (2022), and DFP Design Showcase (UBC 2023)</div>
-  </div>
+      <div class="publication">
+        <strong>"Do I Just Tap My Headset?": How Novice Users Discover Gestural Interactions with Consumer Augmented Reality Applications</strong><br>
+        Anjali Khurana, Michael Glueck, Parmit K Chilana<br>
+        <span class="venue">IMWUT 2023</span> ● <a href="https://doi.org/10.1145/3631451">PAPER</a>
+      </div>
 
-  <div class="publication">
-    <strong>Video Moment Localization using Object Evidence and Reverse Captioning</strong><br>
-    Madhawa Vidanapathirana, Sujith Pandhre, Saurabh Raychaudhuri, Arshdeep Khurana<br>
-    <span class="venue">arXiv 2020</span> ● <a href="https://arxiv.org/abs/2006.10260">PREPRINT</a>
-  </div>
+      <div class="publication">
+        <strong>ChatrEx: Designing Explainable Chatbot Interfaces for Enhancing Usefulness, Transparency, and Trust</strong><br>
+        Anjali Khurana, Parsa Alamzadeh, Parmit Chilana<br>
+        <span class="venue">VL/HCC 2021</span> <span class="acceptance-rate">[30% acceptance rate]</span> ● <a href="https://doi.org/10.1109/VL/HCC51201.2021.9576440">PAPER</a>
+        <div class="publication-note">* Also presented at CS Research Day (SFU 2021), CHI Workshop on Human-Centered Perspectives in XAI (2022), and DFP Design Showcase (UBC 2023)</div>
+      </div>
 
-  <h3>Workshop Papers & Presentations</h3>
-  
-  <div class="publication">
-    <strong>Summary of the Workshop on Interactions for Supporting Explanations and Promoting Comprehension</strong><br>
-    Mona Rezaie, Shawna Purdue, Arshdeep Khurana, Parmit K. Chilana, Melanie Tory, Sheelagh Carpendale<br>
-    <span class="venue">ISS Companion 2024</span> ● <a href="https://doi.org/10.1145/3696762.3698046">PAPER</a>
-  </div>
+      <div class="publication">
+        <strong>Video Moment Localization using Object Evidence and Reverse Captioning</strong><br>
+        Madhawa Vidanapathirana, Supriya Pandhre, Sonia Raychaudhuri,, Anjali Khurana<br>
+        <span class="venue">arXiv preprint 2020</span> ● <a href="https://arxiv.org/abs/2006.10260">PAPER</a>
+      </div>
 
-  <div class="publication">
-    <strong>Designing Semi-Automated Copilots: Balancing User Control and Guidance for Effective Human-Agent Collaboration</strong><br>
-    Arshdeep Khurana, Parmit K. Chilana<br>
-    <span class="venue">CHI 2025 Workshop on Tools for Thought</span>
-  </div>
+      <h3>Workshop Papers & Presentations</h3>
+      
+      <div class="publication">
+        <strong>Designing Semi-Automated Copilots: Balancing User Control and Guidance for Effective Human-Agent Collaboration</strong><br>
+        Anjali Khurana, Parmit Chilana<br>
+        <span class="venue">CHI 2025 Workshop on Tools for Thought, Yokohama, Japan</span>
+      </div>
+     <div class="publication">
+        <strong>Summary of the Workshop on Interactions for Supporting Explanations and Promoting Comprehension</strong><br>
+        Mona Rezaie, Stephanie Purdue, Anjali Khurana, Parmit K Chilana, Melanie Tory, Sheelagh Carpendale<br>
+        <span class="venue">ISS Companion '24</span> ● <a href="https://doi.org/10.1145/3696762.3698046">PAPER</a>
+      </div>
+      <div class="publication">
+        <strong>ChatrEx: Designing Explainable Chatbot Interfaces for Enhancing Usefulness, Transparency, and Trust</strong><br>
+        Anjali Khurana, Parsa Harjandi, Parmit Chilana<br>
+        <span class="venue">Designing for People (DFP) Design Showcase, University of British Columbia (2023)</span>
+      </div>
 
-  <p>For the full list, see <a href="https://scholar.google.ca/citations?user=2A13ywoAAAAJ&hl=en">Google Scholar</a>.</p>
-</section>
+      <div class="publication">
+        <strong>Designing Explainable Chatbot Interfaces: Enhancing Usefulness, Transparency, and Trust</strong><br>
+        Anjali Khurana, Parmit Chilana<br>
+        <span class="venue">CHI 2022 Workshop on Human-Centered Perspectives in Explainable AI</span>
+      </div>
 
-<style>
-  .publication {
-    margin-bottom: 1.5em;
-  }
-  
-  .venue {
-    color: #0066cc;
-    font-weight: 600;
-  }
-  
-  .acceptance-rate {
-    color: #666;
-    font-style: italic;
-  }
-  
-  .publication-note {
-    margin-top: 0.5em;
-    margin-left: 1em;
-    color: #555;
-    font-size: 0.95em;
-  }
-  
-  h3 {
-    margin-top: 2em;
-    margin-bottom: 1em;
-  }
-</style>
+      <div class="publication">
+        <strong>ChatrEx: Designing Explainable Chatbot Interfaces for Enhancing Usefulness, Transparency, and Trust</strong><br>
+        Anjali Khurana, Parsa Harjandi, Parmit Chilana<br>
+        <span class="venue">CS Research Day, Simon Fraser University (2021)</span>
+      </div>
+
+      <p>For the full list, see <a href="https://scholar.google.ca/citations?user=2A13ywoAAAAJ&hl=en">Google Scholar</a>.</p>
+    </section>
+
     <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
